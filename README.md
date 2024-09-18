@@ -1,2 +1,5 @@
 # gurukul2_assignment
-assignment
+
+# Assignment 1 (Variable and List)
+
+
