@@ -1,7 +1,7 @@
 # 1. Write a Python function to find the maximum of three numbers
 # numbers = [3, 5, 6,]
 # print(f"Max : {max(numbers)}")
-from email.policy import strict
+
 
 
 # 2.Write a Python function to multiply all the numbers in a list.
