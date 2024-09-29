@@ -1,11 +1,9 @@
-# 1.define a variable
+# # 1.define a variable
 # x = 1
 # print(int(x), type(int(x)))
 # print(float(x), type(float(x)))
 # print(str(x), type(str(x)))
-from dataclasses import replace
 
-import append
 
 # x = 1
 # y = 2.0
