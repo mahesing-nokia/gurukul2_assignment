@@ -34,29 +34,25 @@ from encodings.punycode import selective_len
 # Include methods to calculate the area and perimeter of the rectangle.
 # Create multiple objects and display the area and perimeter for each?
 
-class Rectangle():
-    def __init__(self, length, width):
-        self.length = length
-        self.width = width
+# class Rectangle():
+#     def __init__(self, length, width):
+#         self.length = length
+#         self.width = width
+#
+#     def rectangle_area(self):
+#         return self.length * self.width
+#
+#     def rectangle_perimeter(self):
+#         return 2 * (self.length + self.width)
+#
+# r1 = Rectangle(5,3)
+# print("Rectangle object Details are:", r1.length, r1.width)
+# print("Area of Rectanle is: ",r1.rectangle_area())
+# print("Paerimeter of Rectangle is:", r1.rectangle_perimeter())
+# print(r1.rectangle_area(), r1.rectangle_perimeter())
 
-    def rectangle_area(self):
-        return self.length * self.width
-
-    def rectangle_perimeter(self):
-        return 2 * (self.length + self.width)
-
-# length = int(input("Enter Length is: "))
-# width = int(input("Enter Width is: "))
-
-r1 = Rectangle(4,3)
-print("Rectangle object Details are:")
-# r1.display_data()
-# print("")
-# print(new_rect.rectangle_area(), new_rect.rectangle_perimeter())
-print("Area of Rectanle is: ",r1.rectangle_area())
-# print("")
-print("Paerimeter of Rectangle is:", r1.rectangle_perimeter())
-
+# 4. Write a class Circle with an attribute radius and methods get_area() and get_circumference().
+# These methods should return the area and circumference of the circle, respectively ?
 # import math
 # class Circle:
 #     def __init__(self,radius):
@@ -67,10 +63,37 @@ print("Paerimeter of Rectangle is:", r1.rectangle_perimeter())
 #         return 2*math.pi*self.radius
 #
 # if __name__ == "__main__":
-#         circle = Circle(5)
+#         circle = Circle(4)
 #         print("Area:", circle.get_area())
 #         print("Circumference:", circle.get_circumference())
 
+# 5.Create Account class with 2 attributes - balance & account no. Create methods for debit, credit & printing the balance
+class BankAccount:
+    def __init__(self, account_number, balance=0):
+        self.account_number = account_number
+        self.balance = balance
+    def deposit(self, amount):
+        self.balance += amount
+        print(f"${amount} has been deposited in your account.")
 
-def display_data(self):
-    print(f'l:{self.length}, w:{self.width}')
+    def withdraw(self, amount):
+        if amount > self.balance:
+            print("Insufficient Balance.")
+        else:
+            self.balance -= amount
+            print(f"${amount} has been withdrawn from your account.")
+
+    def check_balance(self):
+        print(f"Current Balance is ${self.balance}.")
+
+    def print_customer_details(self):
+        print("\nAccount Number is:", self.account_number)
+        print("Balance is: ", self.balance)
+
+if __name__=="__main__":
+    acc_
+acc_num = BankAccount(int(1234), float(5000))
+print("Customer Details:")
+print("===========")
+print("Account Number : ", acc_num.account_number())
+print("The Balance is: ", acc_num.balance(self))
